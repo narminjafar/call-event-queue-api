@@ -73,12 +73,16 @@ Queue Yaradılması: call-events adlı durable queue
 Mesaj Göndərmə: JSON formatda event data
 Persistent Messages: Mesajlar disk-ə yazılır
 ```
+
 # Management UI:
 ```http://localhost:15672```
 
 PowerShell check: ``` Get-Service | Where-Object {$_.Name -like "*Rabbit*"}```
 
 <img width="1500" height="730" alt="screencapture-localhost-15672-2025-12-24-12_52_54" src="https://github.com/user-attachments/assets/f28df77c-0fd1-40b9-9cf0-9e819d47d779" />
+
+# Istəyə bağlı olaraq command:
+```  php artisan rabbitmq:consume ```
 
 # Bütün testlər
 ```php artisan test```
